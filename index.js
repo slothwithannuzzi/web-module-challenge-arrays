@@ -180,8 +180,15 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
+function filterByWord(flavorArr, filter){
+    const returnArr = [];
+    for(let i = 0; i < flavorArr.length; i++) {
+        if (flavorArr[i].includes(filter)){
+            returnArr.push(flavorArr[i]);
+        }
+    }
+
+    return returnArr;
 }
 
 
